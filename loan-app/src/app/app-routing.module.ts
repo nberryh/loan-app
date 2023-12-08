@@ -1,34 +1,34 @@
 // Name: Nolan Berryhill
 // File: app-routing.module.ts
-// Date: 11/19/2023
+// Date: 12/10/2023
 // Description: TS file for app-routing
 
 // Angular specific imports
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-// Components inport
-import { BookListComponent } from './book-list/book-list.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+// Components import
+import { LoanCalculatorComponent } from './loan-calculator/loan-calculator.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 // Routes for routing paths
 const routes: Routes = [
   {
     path:'',
-    component: BookListComponent
+    component: LoanCalculatorComponent
   },
   {
-    path:'book-list',
-    component: BookListComponent
+    path:'loan-calculator',
+    component: LoanCalculatorComponent
   },
   {
-    path:'about',
-    component: AboutComponent
+    path:'about-us',
+    component: AboutUsComponent
   },
   {
-    path:'contact',
-    component: ContactComponent
+    path:'contact-us',
+    component: ContactUsComponent
   }
 ];
 

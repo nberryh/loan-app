@@ -1,0 +1,35 @@
+<!--
+  Title: loan-calculator.component.html
+  Author: Nolan Berryhill
+  Date: 12/10/2023
+  Description: Calculator for loan app
+-->
+
+<div class="loan-calculator">
+  <h2>Loan Calculator</h2>
+
+  <div class="input-group">
+    <label for="loanAmount">Loan Amount:</label>
+    <input type="number" id="loanAmount" [(ngModel)]="loanAmount" />
+  </div>
+
+  <div class="input-group">
+    <label for="interestRate">Interest Rate (%):</label>
+    <input type="number" id="interestRate" [(ngModel)]="interestRate" />
+  </div>
+
+  <div class="input-group">
+    <label for="numberOfYears">Number of Years:</label>
+    <input type="number" id="numberOfYears" [(ngModel)]="numberOfYears" />
+  </div>
+
+  <button (click)="calculateLoan()">Calculate</button>
+
+  <div *ngIf="monthlyPayment !== undefined && totalInterestPaid !== undefined">
+    <h3>Your Monthly Payment:</h3>
+    <p class="result">{{ monthlyPayment | currency:'USD':'symbol':'1.2-2' }}</p>
+
+    <h3>Total Interest Paid:</h3>
+    <p class="result">{{ totalInterestPaid | currency:'USD':'symbol':'1.2-2' }}</p>
+  </div>
+</div>

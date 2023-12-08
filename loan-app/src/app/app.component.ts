@@ -1,6 +1,6 @@
 // Name: Nolan Berryhill
 // File: app.component.ts
-// Date: 11/19/2023
+// Date: 12/10/2023
 // Description: TS file for component
 
 // Angular specific imports
@@ -18,6 +18,6 @@ export class AppComponent {
   assignment: string;
 
   constructor() {
-    this.assignment = "Exercise 5.2 - Navigation and Layout";
+    this.assignment = "Loaner";
   }
 }

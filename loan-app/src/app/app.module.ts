@@ -1,6 +1,6 @@
 // Name: Nolan Berryhill
 // File: app.module.ts
-// Date: 11/19/2023
+// Date: 12/10/2023
 // Description: TS file for app
 
 // Angular specific imports
@@ -11,9 +11,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { BookListComponent } from './book-list/book-list.component';
-import { AboutComponent } from './about/about.component';
-import { ContactComponent } from './contact/contact.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { LoanCalculatorComponent } from './loan-calculator/loan-calculator.component';
 
 // Project specific imports
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -27,9 +27,9 @@ import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
-    AboutComponent,
-    ContactComponent,
-    BookListComponent
+    AboutUsComponent,
+    ContactUsComponent,
+    LoanCalculatorComponent
   ],
   imports: [
     BrowserModule,

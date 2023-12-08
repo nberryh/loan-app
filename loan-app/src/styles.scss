@@ -1,14 +1,9 @@
 /**
   Title: styles.scss
   Author: Nolan Berryhill
-  Date: 11/19/2023
-  Description: Styles for in n out books
+  Date: 12/10/2023
+  Description: Styles for Loaner
 */
-
-/**
-  Imports items from theme
-*/
-@import './theme';
 
 /**
   Height style
@@ -68,3 +63,6 @@ body {
 .align-center {
   text-align: center;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
