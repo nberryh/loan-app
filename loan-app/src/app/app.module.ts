@@ -22,6 +22,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatButtonModule} from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatIconModule } from '@angular/material/icon';
+import { FormsModule } from '@angular/forms';
 
 // Declarations and imports for application
 @NgModule({
@@ -40,7 +41,8 @@ import { MatIconModule } from '@angular/material/icon';
     MatListModule,
     MatButtonModule,
     FlexLayoutModule,
-    MatIconModule
+    MatIconModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './loan-calculator.component.scss'
 })
 export class LoanCalculatorComponent {
-  loanAmount: number;
-  interestRate: number;
-  numberOfYears: number;
-  monthlyPayment: number;
-  totalInterestPaid: number;
+  loanAmount!: number;
+  interestRate!: number;
+  numberOfYears!: number;
+  monthlyPayment: number | undefined;
+  totalInterestPaid: number | undefined;
 
   calculateLoan() {
     const r = this.interestRate / 12 / 100;
