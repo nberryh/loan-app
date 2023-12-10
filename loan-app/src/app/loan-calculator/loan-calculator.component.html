@@ -5,9 +5,19 @@
   Description: Calculator for loan app
 -->
 
-<div class="loan-calculator">
-  <h2>Loan Calculator</h2>
+<!-- Header information -->
+<mat-toolbar class="mat-toolbar">
+  <mat-toolbar-row>
 
+    <h2 style="color:blue">Loan Calculator</h2>
+
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<!-- div of loan-calculator -->
+<div id="loan-calculator">
+
+  <!-- Input-group information for the calculator -->
   <div class="input-group">
     <label for="loanAmount">Loan Amount:</label>
     <input type="number" id="loanAmount" [(ngModel)]="loanAmount" />
@@ -23,9 +33,11 @@
     <input type="number" id="numberOfYears" [(ngModel)]="numberOfYears" />
   </div>
 
-  <button (click)="calculateLoan()">Calculate</button>
+  <!-- Button for input -->
+  <button (click)="calculateLoan()" class="input-button">Calculate</button>
 
-  <div *ngIf="monthlyPayment !== undefined && totalInterestPaid !== undefined">
+  <!-- Results are display from input results -->
+  <div class="results" *ngIf="monthlyPayment !== undefined && totalInterestPaid !== undefined">
     <h3>Your Monthly Payment:</h3>
     <p class="result">{{ monthlyPayment | currency:'USD':'symbol':'1.2-2' }}</p>
 

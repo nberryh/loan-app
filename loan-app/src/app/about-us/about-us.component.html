@@ -5,24 +5,37 @@
   Description: Index for app loan app
 -->
 
-<!-- Toolbar for html -->
+<!-- Header for section -->
 <mat-toolbar class="mat-toolbar">
   <mat-toolbar-row>
 
-    <h2>About Us!!!!</h2>
+    <h2 style="color:blue">About Us!!!!</h2>
 
   </mat-toolbar-row>
 </mat-toolbar>
 
 <br>
 
-<!-- Text and Image for the about page -->
-<div>
+<!-- fxLayout for container -->
+<div fxLayout="row wrap">
 
-  <p>{{ aboutText }}</p>
+  <!-- Text information for About Us -->
+  <div fxFlex>
+    <mat-card style="box-shadow: none;">
+      <mat-card-content class="align-center">
+        <p>{{ aboutText }}</p>
+      </mat-card-content>
+    </mat-card>
+  </div>
 
-  <div style="width: 40%;">
-    <img src="../assets/Loaner.png">
+  <!-- Image for About Us -->
+  <div fxFlex>
+    <mat-card style="box-shadow: none;">
+      <mat-card-content class="align-center">
+        <img src="../assets/Loaner.png">
+      </mat-card-content>
+    </mat-card>
   </div>
 
 </div>
+

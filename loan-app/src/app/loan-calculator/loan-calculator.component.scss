@@ -2,12 +2,44 @@
   Title: loan-calculator.component.scss
   Author: Nolan Berryhill
   Date: 12/10/2023
-  Description: Styles for in n out books
+  Description: Styles for loan-calculator
 */
 
 /**
-  Position right side for results
+  Display and Padding for loan-calculator
+*/
+#loan-calculator {
+  display: grid;
+  padding: 15%;
+}
+
+/**
+  text align and padding for input group
+*/
+.input-group {
+  text-align: left;
+  padding: 5px;
+}
+
+/**
+  Width for button
+*/
+.input-button {
+  width: 30%;
+  background-color: blue;
+  color: white;
+}
+
+/**
+  Text-align for results
 */
 .results {
-  float: right;
+  text-align: right;
+}
+
+/**
+  Text align for mat-toolbar
+*/
+.mat-toolbar {
+  text-align: center;
 }

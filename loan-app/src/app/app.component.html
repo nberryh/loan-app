@@ -12,9 +12,9 @@
     <div style="width: 80%;">
       <!-- Links for toolbar-->
       <div fxLayout="row wrap" fxLAyoutAlign="end start">
-        <button mat-button routerLink="/loan-calculator">Loan Calculator</button>
-        <button mat-button routerLink="/contact-us">Contact US</button>
-        <button mat-button routerLink="/about-us">About US</button>
+        <button mat-button routerLink="/loan-calculator" style="color:green">Loan Calculator</button>
+        <button mat-button routerLink="/contact-us" style="color:yellow">Contact US</button>
+        <button mat-button routerLink="/about-us" style="color:red">About US</button>
       </div>
     </div>
   </mat-toolbar-row>
@@ -26,7 +26,7 @@
 <div fxLayout="row wrap">
   <div fxFlex>
     <mat-card class="main-container">
-      <mat-card-title class="blue">
+      <mat-card-title style="color:rgb(8, 38, 94)">
         {{ assignment }}
       </mat-card-title>
 
