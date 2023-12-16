@@ -1,47 +1,53 @@
 <!--
   Title: loan-calculator.component.html
   Author: Nolan Berryhill
-  Date: 12/10/2023
+  Date: 12/17/2023
   Description: Calculator for loan app
 -->
 
-<!-- Header information -->
-<mat-toolbar class="mat-toolbar">
-  <mat-toolbar-row>
 
-    <h2 style="color:blue">Loan Calculator</h2>
 
-  </mat-toolbar-row>
-</mat-toolbar>
+<h2 style="text-align: center; color:blue; font-size: 35px;">Loan Calculator</h2>
 
-<!-- div of loan-calculator -->
-<div id="loan-calculator">
+<div class="container">
 
-  <!-- Input-group information for the calculator -->
-  <div class="input-group">
-    <label for="loanAmount">Loan Amount:</label>
-    <input type="number" id="loanAmount" [(ngModel)]="loanAmount" />
+  <div class="allInformation">
+    <div class="card">
+      <div class="card-body">
+        <!-- Input-group information for the calculator -->
+        <div class="input-group">
+          <label for="loanAmount">Loan Amount:</label>
+          <input type="number" id="loanAmount" [(ngModel)]="loanAmount" />
+        </div>
+
+        <div class="input-group">
+          <label for="interestRate">Interest Rate (%):</label>
+          <input type="number" id="interestRate" [(ngModel)]="interestRate" />
+        </div>
+
+        <div class="input-group">
+          <label for="numberOfYears">Number of Years:</label>
+          <input type="number" id="numberOfYears" [(ngModel)]="numberOfYears" />
+        </div>
+
+        <!-- Button for input -->
+        <button (click)="calculateLoan()" class="input-button">Calculate</button>
+      </div>
+    </div>
   </div>
 
-  <div class="input-group">
-    <label for="interestRate">Interest Rate (%):</label>
-    <input type="number" id="interestRate" [(ngModel)]="interestRate" />
-  </div>
+  <div class="allResults">
+    <div class="card">
+      <div class="card-body">
+        <!-- Results are display from input results -->
+        <div class="results" *ngIf="monthlyPayment !== undefined && totalInterestPaid !== undefined">
+          <h3 style="font-size: 25px;">Your Monthly Payment:</h3>
+          <p id="monthlyPayment" style="font-size: 48px;">{{ monthlyPayment | currency:'USD':'symbol':'1.2-2' }}</p>
 
-  <div class="input-group">
-    <label for="numberOfYears">Number of Years:</label>
-    <input type="number" id="numberOfYears" [(ngModel)]="numberOfYears" />
-  </div>
-
-  <!-- Button for input -->
-  <button (click)="calculateLoan()" class="input-button">Calculate</button>
-
-  <!-- Results are display from input results -->
-  <div class="results" *ngIf="monthlyPayment !== undefined && totalInterestPaid !== undefined">
-    <h3>Your Monthly Payment:</h3>
-    <p class="result">{{ monthlyPayment | currency:'USD':'symbol':'1.2-2' }}</p>
-
-    <h3>Total Interest Paid:</h3>
-    <p class="result">{{ totalInterestPaid | currency:'USD':'symbol':'1.2-2' }}</p>
+          <h3 style="font-size: 25px;">Total Interest Paid:</h3>
+          <p id="monthlyPayment" style="font-size: 48px;">{{ totalInterestPaid | currency:'USD':'symbol':'1.2-2' }}</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

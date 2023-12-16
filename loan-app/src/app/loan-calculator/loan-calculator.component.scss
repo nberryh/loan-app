@@ -5,27 +5,29 @@
   Description: Styles for loan-calculator
 */
 
-/**
-  Display and Padding for loan-calculator
-*/
-#loan-calculator {
-  display: grid;
-  padding: 15%;
+
+.allInformation {
+  border: 3px solid blue;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /**
   text align and padding for input group
 */
 .input-group {
-  text-align: left;
-  padding: 5px;
+  padding: 20px;
+  font-size: 24px;
 }
 
 /**
   Width for button
 */
 .input-button {
-  width: 30%;
+  width: 35%;
+  font-size: 24px;
   background-color: blue;
   color: white;
 }
@@ -33,9 +35,15 @@
 /**
   Text-align for results
 */
-.results {
-  text-align: right;
+.allResults {
+  border: 3px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
 }
+
+
 
 /**
   Text align for mat-toolbar

@@ -1,16 +1,18 @@
 // Name: Nolan Berryhill
-// File: app.module.ts
+// File: about-us.component.ts
 // Date: 12/10/2023
 // Description: TS file for app
 
 // Angular specific imports
 import { Component } from '@angular/core';
 
+// selector, templateUrl, styleUrl for Component
 @Component({
   selector: 'app-about-us',
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.scss'
 })
+
 // Export AboutUsComponent
 export class AboutUsComponent {
   aboutText: string = `Introducing "Loaner," a cutting-edge loan company app managed and operated by graduates from the illustrious Ravenclaw house at Hogwarts School of Witchcraft and Wizardry. Born from a fusion of financial acumen and the wit and wisdom emblematic of Ravenclaw, this app combines magical innovation with a commitment to empowering users.
